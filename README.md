@@ -6,14 +6,13 @@ SDK 运行于 PHP 8.1+；推荐商户生产环境使用仍在支持周期内的 
 
 ## 安装
 
-先在商户项目目录注册 YoPay Composer 源；该源只提供 `yopay/yopay-php`，不会覆盖 Packagist 的其他依赖：
+YoPay PHP SDK 发布在 Packagist。在商户项目目录执行：
 
 ```bash
-composer config repositories.yopay composer https://git.yolaila.top/api/packages/SDK/composer
-composer require yopay/yopay-php:^0.1 --prefer-dist
+composer require yopay/yopay-php:^0.1
 ```
 
-生产项目应锁定已验证版本并提交 `composer.lock`。安装包通过 Composer `dist` ZIP 分发，不需要访问 SDK 源码仓库。
+生产项目应锁定已验证版本并提交 `composer.lock`。Composer 会从发布版 `dist` ZIP 安装 SDK，不需要商户访问开发源码仓库。
 
 ## 配置与下单
 
