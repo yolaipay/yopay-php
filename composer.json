@@ -1,9 +1,9 @@
 {
   "name": "yopay/yopay-php",
   "description": "Merchant-side PHP SDK for YoPay Pay Open API.",
-  "homepage": "https://git.yolaila.top/SDK/yopay-php",
+  "homepage": "https://pay-doc.yolaila.top/",
   "support": {
-    "source": "https://git.yolaila.top/SDK/yopay-php"
+    "docs": "https://pay-doc.yolaila.top/"
   },
   "type": "library",
   "license": "MIT",
