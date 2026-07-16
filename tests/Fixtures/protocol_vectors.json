@@ -1,0 +1,50 @@
+{
+  "vectors": [
+    {
+      "name": "post_pay_order",
+      "method": "POST",
+      "path": "/api/v1/open/pay/order",
+      "mch_id": "MR20260703000001",
+      "timestamp": "1783000000",
+      "nonce": "nonce-001",
+      "request_id": "req-post-001",
+      "secret_key": "test-signing-key-001",
+      "json_payload": {
+        "scene": "qr",
+        "merchant_order_no": "MO-001",
+        "amount": "100.000",
+        "payer": {
+          "merchant_user_id": "U-001",
+          "account_type": 3,
+          "account_no": "openid-001"
+        }
+      },
+      "canonical_payload": "{\"amount\":\"100.000\",\"merchant_order_no\":\"MO-001\",\"payer\":{\"account_no\":\"openid-001\",\"account_type\":3,\"merchant_user_id\":\"U-001\"},\"scene\":\"qr\"}",
+      "payload_digest": "a6e2fc3691806babeb9137f0382da0ab6f9c379395e5f79229876947e5b861f5",
+      "sign_text": "POST\n/api/v1/open/pay/order\nMR20260703000001\n1783000000\nnonce-001\nreq-post-001\na6e2fc3691806babeb9137f0382da0ab6f9c379395e5f79229876947e5b861f5",
+      "signature": "eb0518489f27862e9a4cb4d3760c6b9b336b39b45e820af7c86278be7f6093ef"
+    },
+    {
+      "name": "get_pay_query",
+      "method": "GET",
+      "path": "/api/v1/open/pay/query",
+      "mch_id": "MR20260703000001",
+      "timestamp": "1783000001",
+      "nonce": "nonce-002",
+      "request_id": "req-get-002",
+      "secret_key": "test-signing-key-001",
+      "query": {
+        "trade_type": "1",
+        "trade_no": "260703070001100100000001",
+        "merchant_order_no": "MO-001",
+        "page": "1",
+        "page_size": "20",
+        "signature": "drop-me"
+      },
+      "canonical_payload": "merchant_order_no=MO-001&page=1&page_size=20&trade_no=260703070001100100000001&trade_type=1",
+      "payload_digest": "e265fdc819b910230bd0f6dd91f211f433517df676fba01329700cdfa4935681",
+      "sign_text": "GET\n/api/v1/open/pay/query\nMR20260703000001\n1783000001\nnonce-002\nreq-get-002\ne265fdc819b910230bd0f6dd91f211f433517df676fba01329700cdfa4935681",
+      "signature": "f2811154eeff3f0d23f92027d549104386423f32779501c25d1db7e9a8bb3969"
+    }
+  ]
+}
