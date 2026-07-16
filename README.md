@@ -180,9 +180,9 @@ echo '{"code":0}';
 - `CryptoException`：PEM、RSA-OAEP、AES-GCM、信封或解密 JSON 失败。
 - `CoroutineException`：显式使用 Swoole 适配器但扩展/协程上下文不满足要求。
 
-## 示例与本地质量检查
+## 示例与本地检查
 
-所有 SDK 开发和验证通过 Docker 执行，不需要在宿主机安装 PHP 或 Composer：
+可使用 Docker 执行以下检查：
 
 ```bash
 docker compose run --rm php83 composer install
